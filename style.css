@@ -426,25 +426,18 @@ h1 {
     justify-content: center; /* Centraliza horizontalmente */
     margin-left:-100px;
   }
-  .bloco-questoes {
-    width: 200px;
-    background-color: #C6D4E1;
-    border-radius: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    padding:10px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-
-  .bloco-questoes h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-  }
-
-  .bloco-questoes img {
-    width: 100px;
-    margin-top: 15px;
+.bloco-questoes {
+  width: 90%; /* ocupa 90% da largura da tela */
+  max-width: 400px; /* limite máximo para telas grandes */
+  background-color: #C6D4E1;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* centraliza na tela */
+  box-sizing: border-box; /* evita overflow por padding */
+}
   }  
   .bloco-flashcards {
     width: 200px;
