@@ -306,26 +306,7 @@ h1 {
   .seta.direita {
     right: 15px;
   }
- /*Pertencem a imagem inicial*/
-  /*titulo*/
-  .titulo{
-    text-align: center;
-    font-size:10px;
-    margin-right:1050px;
-  }
-  .barra-materia{
-  
-    display: flex;
-    overflow-x: auto;
-    gap: 35px;
-    justify-content: center; /* alinha horizontalmente */
-    align-items: center;     /* alinha verticalmente */
-  
-  }
-  .seta-esquerda{
-    margin-left:-300px;
-    height:20px;
-    display: flex;
+
   
 /*------------------------------------------------------------*/
 
