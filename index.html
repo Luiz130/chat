@@ -1,126 +1,524 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Painel com Firebase Modular</title>
-  <style>
-    /* Coloque aqui o CSS do painel que você já tem */
-  </style>
+    <meta charset="UTF-8">
+    <title>SDEL - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="grate">
+<header>
 
-<div id="botaoPainel">🛠️</div>
+    <div class="logo1">
+   <img src="https://cdn-icons-png.flaticon.com/512/1356/1356604.png" width="70" height="70">
+   <a class="SDEL">SDEL</a>
+  </div>
+    <div class="header-right">
+       <p class="Facilite">Facilite seu estudo</p>
+        <!--<p class="Festudo">Facilite seu estudo</p>-->
+        <button class="APP-SDEL">
+            <div class="menu">
+                <a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=pt_BR">APP SDEL</a>
+            </div>    
 
+
+        </button>
+        <a href="login.html">
+        <button class="login-btn">LOGIN</button>
+        </a>
+        
+        
+        <div class="menu-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/3736/3736502.png" 
+          class="menu-image" 
+          id="profileImage" 
+          alt="Perfil" 
+          width="30" 
+          height="30">
+
+            
+            <div class="perfil-options" id="perfilOptions">
+              <a href="perfil.html">Perfil</a>
+              <a href="login.html">Sair</a>
+            </div>
+        </div>
+        </div>
+
+</header>
+
+
+
+    
+    <div class="subheader-right">
+      <!--   
+        <select class="Matérias-slc" onchange="location.href=this.value">
+            <option value="#">Selecione</option>
+            <option value= "geografia.html">Geografia</option>
+            <option value="historia.html">Historia</option>
+            <option value="http://www.fluminense.com.br">Matemática</option>
+            <option value="http://www.vasco.com.br">Português</option>
+           </select>
+            -->
+   <!--<button class="Redação-btn">Redação</button>-->
+   <!--<button class="Exercícios-btn">Exercícios</button> -->
+  </div>
+   
+
+   
+
+  
+   
+  
+   <div class="centralizador">
+    <div class="retangulo">
+      <!-- Seta Esquerda -->
+      <!--<img class="seta" src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Seta Esquerda">-->
+
+      <!-- Conteúdo principal -->
+      <div class="conteudo">
+        <div class="texto">
+          <h1>Decole nos estudos</h1>
+          <p>Estude com confiança com os nossos temas e decole nos estudos!</p>
+        </div>
+        <img class="imagem" src="https://cdn-icons-png.flaticon.com/512/12535/12535010.png" alt="Imagem principal">
+      </div>
+
+      <!-- Seta Direita -->
+    <!-- <img class="seta" src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Seta Direita">-->
+    </div>
+  </div>
+    
+
+  </div>
+ </body>
+ </html>
+ <br>
+ <br>
+   <div class="titulo">
+   <h1>Estude conosco</h1>
+   </div>
+
+   <br>
+   <div class="carrossel-wrapper">
+    <!-- Setas com imagem -->
+    <img src="https://cdn-icons-png.flaticon.com/512/159/159605.png" class="seta seta-esquerda" onclick="rolar(-1)" alt="Seta Esquerda">
+    <img src="https://cdn-icons-png.flaticon.com/512/159/159606.png" class="seta seta-direita" onclick="rolar(1)" alt="Seta Direita">
+  
+    <!-- Conteúdo rolável -->
+    <div class="carrossel-container" id="carrossel">
+
+
+      <div class="card">
+        <a href="math.html"><img src="https://cdn-icons-png.flaticon.com/512/3965/3965108.png" alt="Matemática"></a>
+        <p>Matemática</p>
+      </div>
+    
+      <div class="card">
+        <a href="geografia.html"><img src="https://cdn-icons-png.flaticon.com/512/8327/8327668.png" alt="Geografia"></a>
+        <p>Geografia</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1183/1183815.png" alt="História">
+        <p>História</p>
+      </div>
+
+      <div class="card">
+        <img src=https://cdn-icons-png.flaticon.com/512/5833/5833290.png alt="Português">
+        <p>Português</p>
+      </div>
+      
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/128/8986/8986389.png" alt="Química">
+        <p>Química</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1651/1651656.png" alt="Sociologia">
+        <p>Sociologia</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1172/1172835.png" alt="filosofia">
+        <p>Filosofia</p>
+      </div>
+  
+
+   
+    </div>
+  </div>
+  
+  
+
+  <div class="titulo2">
+  <h1>Ferramentas</h1>
+  <br>
+  <br>
+  
+  </div>
+   
+  <div class="ferramentas">
+    
+
+    <div class="bloco-questoes">
+      <h2>Questões</h2>
+         <a href="simulado.html">
+      <img src="https://cdn-icons-png.flaticon.com/512/987/987818.png" alt="Imagem de Questões">
+      </a>
+    </div>
+  
+
+    <div class="bloco-flashcards">
+  <h2>Flashcards</h2>
+  <a href="flashcards01.html">
+    <img src="https://cdn-icons-png.flaticon.com/512/667/667828.png" alt="Imagem Flashcards">
+  </a>
+
+</div>
+
+
+    <div class="bloco-cronograma">
+      <h2>Cronograma</h2>
+      <a href="cronograma.html">
+      <img src="https://cdn-icons-png.flaticon.com/512/5214/5214181.png" alt="Imagem Cronograma">
+    </a>
+    </div>
+
+       <div class="bloco-analise-resultado">
+  <h2>Analise de resultado</h2>
+  <a href="analise_resultado.html">
+    <img src="https://cdn-icons-png.flaticon.com/512/8163/8163391.png" alt="Imagem Flashcards">
+  </a>
+  </div>
+
+         <div class="redacao">
+  <h2>Redação</h2>
+  <a href="redacao.html">
+    <img src="https://cdn-icons-png.flaticon.com/512/4698/4698171.png" alt="Imagem Flashcards">
+  </a>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<head>
+
+  <title>Vestibular & Enem</title>
+
+</head>
+<body>
+  <div class="pagina-enem">
+
+    <div class="Vestibular-enem">
+    <h1>Vestibular & Enem</h1>
+    </div>
+    <br>
+    <div class="secao-enem">
+
+      <div class="cartao-enem" onclick="abrirVideo('https://www.youtube.com/watch?v=7PrRzxNwEC4')">
+        <div class="imagem-enem">
+          <img src="https://img.youtube.com/vi/7PrRzxNwEC4/hqdefault.jpg" alt="Thumbnail do vídeo">
+        </div>
+        <div class="info-enem">
+          <h3>Enem+</h3>
+          <p>Colocamos em pauta os assuntos mais abordados em matemática no Enem e além disso damos dicas e macetes.</p>
+        </div>
+      </div>
+
+<div class="cartao-enem" onclick="abrirVideo('temas_redacao.html')">
+        <div class="imagem-enem">
+          <img src="https://www.bernoulli.com.br/app/uploads/2024/10/AnyConv.com__shutterstock_1203448918-1080x720.webp" alt="Thumbnail">
+        </div>
+        <div class="info-enem">
+          <h3>Redação Enem</h3>
+          <p>Temas em alta que podem cair na redação do Enem. Contém explicação detalhada.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function abrirVideo(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Rodapé-->
+  <footer>
+    <div class="footer-wrapper">
+      <!-- Sobre -->
+      <div class="footer-column">
+        <h4>Sobre o site</h4>
+        <p>
+          Portal com conteúdos educativos gratuitos para estudantes do ensino médio, ENEM e vestibulares. Nosso objetivo é democratizar o conhecimento com qualidade e confiança.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-column">
+        <h4>Links importantes</h4>
+        <a href="#">Início</a>
+        <a href="#">Contato</a>
+      </div>
+
+      <!-- Redes Sociais -->
+      <div class="footer-column">
+        <h4>Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+          </a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+          </a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; SDEL. Todos os direitos reservados.
+    </div>
+  </footer>
+
+
+
+
+
+
+</div>
+
+  <title>Painel Flutuante Moderno e Movível</title>
+
+<body>
+
+<!-- Botão lateral com ícone de ferramenta para abrir/fechar o painel -->
+<div id="botaoPainel" title="Abrir Painel">🛠️</div>
+
+<!-- Painel flutuante movível -->
 <div id="painel">
-  <div id="cabecalhoPainel">Painel</div>
+  <div id="cabecalhoPainel">Painel Rápido</div>
 
-  <button onclick="alternarSecao('blocoNotas')">📘 Notas</button>
+  <!-- Botão para mostrar/esconder bloco de notas -->
+  <button class="botaoSecao" onclick="alternarSecao('blocoNotas')">📘 Bloco de Notas</button>
   <div id="blocoNotas" class="secaoPainel">
+    <label for="textareaNotas">Suas Anotações:</label>
     <textarea id="textareaNotas" placeholder="Digite suas anotações..."></textarea>
   </div>
 
-  <button onclick="alternarSecao('containerCronometro')">⏱️ Cronômetro</button>
+  <!-- Botão para mostrar/esconder cronômetro -->
+  <button class="botaoSecao" onclick="alternarSecao('containerCronometro')">⏱️ Cronômetro</button>
   <div id="containerCronometro" class="secaoPainel">
     <div id="cronometro">00:00:00</div>
-    <button onclick="iniciarCronometro()">Iniciar</button>
-    <button onclick="pararCronometro()">Parar</button>
-    <button onclick="resetarCronometro()">Resetar</button>
+    <div id="botoesCronometro">
+      <button onclick="iniciarCronometro()">Iniciar</button>
+      <button onclick="pararCronometro()">Parar</button>
+      <button onclick="resetarCronometro()">Resetar</button>
+    </div>
   </div>
 </div>
-
-<!-- Firebase Modular SDK -->
 <script type="module">
-  // Importando módulos necessários
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+  // Importações Firebase SDK (modular, mesma versão para evitar conflitos)
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+  import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
 
+  // Configuração do Firebase (sua config)
   const firebaseConfig = {
-    apiKey: "AIzaSyATG5P2NvdecjCPO7gzFNGs6l7plDrxY04",
-    authDomain: "sdel-16c6a.firebaseapp.com",
-    projectId: "sdel-16c6a",
-    storageBucket: "sdel-16c6a.appspot.com",
-    messagingSenderId: "676676370586",
-    appId: "1:676676370586:web:444947d3dda78a80d9df23",
-    measurementId: "G-FZWQ9FYZG5"
+    apiKey: "AIzaSyCj8i37JYNigvbhXfqP4HVzjAEOzcXf_i0",
+    authDomain: "sdel-b3f65.firebaseapp.com",
+    projectId: "sdel-b3f65",
+    storageBucket: "sdel-b3f65.firebasestorage.app",
+    messagingSenderId: "297725999985",
+    appId: "1:297725999985:web:d41da68311c190ef8a54d0",
+    measurementId: "G-PT92VECJ2H"
   };
 
+  // Inicializa Firebase
   const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-  const userId = "usuario_demo"; // Substituir por UID real se tiver login
+  const analytics = getAnalytics(app);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
 
-  // === BLOCO DE NOTAS ===
+  // Elementos do DOM
+  const botaoPainel = document.getElementById('botaoPainel');
+  const painel = document.getElementById('painel');
   const textareaNotas = document.getElementById('textareaNotas');
+  const cabecalhoPainel = document.getElementById('cabecalhoPainel');
+  const profileImg = document.getElementById('profileImage');
+  const perfilOptions = document.getElementById('perfilOptions'); // Corrigido nome da variável
 
-  // Carregar do Firebase
-  get(child(ref(db), `usuarios/${userId}/anotacoes`)).then(snapshot => {
-    if (snapshot.exists()) {
-      textareaNotas.value = snapshot.val();
+  // Controle painel abrir/fechar
+  botaoPainel.onclick = () => {
+    painel.style.display = (painel.style.display === 'block') ? 'none' : 'block';
+  };
+
+  // Alternar visibilidade das seções
+  window.alternarSecao = function(id) {
+    const secao = document.getElementById(id);
+    secao.style.display = (secao.style.display === 'block') ? 'none' : 'block';
+  };
+
+  // Variável usuário logado
+  let usuarioAtual = null;
+
+  // Carregar notas do Firestore
+  async function carregarNotas(uid) {
+    const docRef = doc(db, "notasUsuario", uid);
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+      textareaNotas.value = docSnap.data().texto || "";
+    } else {
+      textareaNotas.value = "";
+    }
+  }
+
+  // Salvar notas no Firestore
+  async function salvarNotas(uid, texto) {
+    const docRef = doc(db, "notasUsuario", uid);
+    await setDoc(docRef, { texto });
+  }
+
+  // Atualizar notas quando usuário digitar
+  textareaNotas.addEventListener("input", () => {
+    if (!usuarioAtual) return;
+    salvarNotas(usuarioAtual.uid, textareaNotas.value);
+  });
+
+  // Monitora estado do login
+  onAuthStateChanged(auth, async (user) => {
+    if (user) {
+      usuarioAtual = user;
+      await carregarNotas(user.uid);
+      // Atualiza imagem de perfil se existir
+      if (user.photoURL && profileImg) {
+        profileImg.src = user.photoURL;
+      }
+    } else {
+      usuarioAtual = null;
+      textareaNotas.value = "";
+      if (profileImg) profileImg.src = "default-profile.png"; // opcional: imagem default
     }
   });
 
-  // Salvar automaticamente ao digitar
-  textareaNotas.addEventListener('input', () => {
-    set(ref(db, `usuarios/${userId}/anotacoes`), textareaNotas.value);
-  });
-
-  // === CRONÔMETRO ===
+  // Cronômetro
   let segundos = 0, minutos = 0, horas = 0;
-  let intervalo = null;
-
-  const cronometro = document.getElementById('cronometro');
-
-  const formatar = (n) => n.toString().padStart(2, '0');
+  let intervaloCronometro = null;
 
   function atualizarCronometro() {
     segundos++;
-    if (segundos === 60) { segundos = 0; minutos++; }
-    if (minutos === 60) { minutos = 0; horas++; }
-
-    cronometro.textContent = `${formatar(horas)}:${formatar(minutos)}:${formatar(segundos)}`;
-
-    // Salvar tempo
-    set(ref(db, `usuarios/${userId}/cronometro`), { horas, minutos, segundos });
-  }
-
-  function iniciarCronometro() {
-    if (!intervalo) intervalo = setInterval(atualizarCronometro, 1000);
-  }
-
-  function pararCronometro() {
-    clearInterval(intervalo);
-    intervalo = null;
-  }
-
-  function resetarCronometro() {
-    pararCronometro();
-    horas = minutos = segundos = 0;
-    cronometro.textContent = "00:00:00";
-    set(ref(db, `usuarios/${userId}/cronometro`), { horas: 0, minutos: 0, segundos: 0 });
-  }
-
-  // Carregar tempo salvo
-  get(child(ref(db), `usuarios/${userId}/cronometro`)).then(snapshot => {
-    if (snapshot.exists()) {
-      const tempo = snapshot.val();
-      horas = tempo.horas || 0;
-      minutos = tempo.minutos || 0;
-      segundos = tempo.segundos || 0;
-      cronometro.textContent = `${formatar(horas)}:${formatar(minutos)}:${formatar(segundos)}`;
+    if (segundos >= 60) {
+      segundos = 0;
+      minutos++;
     }
-  });
+    if (minutos >= 60) {
+      minutos = 0;
+      horas++;
+    }
+    const formatarNumero = n => n.toString().padStart(2, '0');
+    const cronometroEl = document.getElementById('cronometro');
+    if(cronometroEl) {
+      cronometroEl.innerText = `${formatarNumero(horas)}:${formatarNumero(minutos)}:${formatarNumero(segundos)}`;
+    }
+  }
 
-  // === Alternar seções ===
-  window.alternarSecao = (id) => {
-    const secao = document.getElementById(id);
-    secao.style.display = secao.style.display === 'block' ? 'none' : 'block';
+  window.iniciarCronometro = function() {
+    if (!intervaloCronometro) intervaloCronometro = setInterval(atualizarCronometro, 1000);
   };
 
-  // === Mostrar/esconder painel ===
-  document.getElementById('botaoPainel').onclick = () => {
-    const painel = document.getElementById('painel');
-    painel.style.display = painel.style.display === 'block' ? 'none' : 'block';
+  window.pararCronometro = function() {
+    clearInterval(intervaloCronometro);
+    intervaloCronometro = null;
+  };
+
+  window.resetarCronometro = function() {
+    window.pararCronometro();
+    segundos = minutos = horas = 0;
+    const cronometroEl = document.getElementById('cronometro');
+    if(cronometroEl) cronometroEl.innerText = '00:00:00';
+  };
+
+  // Drag painel pelo cabeçalho
+  let posX = 0, posY = 0, posInicialX = 0, posInicialY = 0;
+
+  cabecalhoPainel.onmousedown = dragMouseDown;
+
+  function dragMouseDown(e) {
+    e.preventDefault();
+    posInicialX = e.clientX;
+    posInicialY = e.clientY;
+    document.onmouseup = fecharDrag;
+    document.onmousemove = moverPainel;
+  }
+
+  function moverPainel(e) {
+    e.preventDefault();
+    const dx = e.clientX - posInicialX;
+    const dy = e.clientY - posInicialY;
+    posInicialX = e.clientX;
+    posInicialY = e.clientY;
+
+    // Calcula posição atual e aplica deslocamento
+    const rect = painel.getBoundingClientRect();
+    let novaTop = rect.top + dy;
+    let novaLeft = rect.left + dx;
+
+    // Limita para não sair da tela
+    novaTop = Math.min(Math.max(novaTop, 0), window.innerHeight - rect.height);
+    novaLeft = Math.min(Math.max(novaLeft, 0), window.innerWidth - rect.width);
+
+    painel.style.top = novaTop + "px";
+    painel.style.left = novaLeft + "px";
+    painel.style.right = "auto"; // Para evitar conflito se usar right antes
+  }
+
+  function fecharDrag() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+
+  // Menu do perfil (toggle)
+  if (profileImg && perfilOptions) {
+    profileImg.addEventListener('click', (e) => {
+      e.stopPropagation();
+      perfilOptions.style.display = (perfilOptions.style.display === 'block') ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', () => {
+      perfilOptions.style.display = 'none';
+    });
+  }
+
+  // Função rolar carrossel
+  window.rolar = function(direcao) {
+    const carrossel = document.getElementById("carrossel");
+    if (!carrossel) return;
+    const larguraItem = 130; // largura + espaço
+    carrossel.scrollLeft += direcao * larguraItem;
   };
 
 </script>
+
 </body>
-</html>
