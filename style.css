@@ -987,13 +987,14 @@ h1 {
     align-items: center;
   }
 
-  .bloco-questoes,
-  .bloco-flashcards,
-  .bloco-cronograma,
-  .bloco-analise-resultado,
-  .redacao {
-    width: 90%;
-  }
+.bloco-questoes,
+.bloco-flashcards,
+.bloco-cronograma,
+.bloco-analise-resultado,
+.redacao {
+  width: 90%;
+  margin-left: auto; /* empurra o bloco para a direita */
+}
 
   .footer-wrapper {
     flex-direction: column;
