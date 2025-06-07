@@ -1,4 +1,3 @@
-
 .grade {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -418,31 +417,34 @@ h1 {
     margin-right:1100px;
   }
 
-.ferramentas {
-  display: flex;
-  flex-wrap: wrap; /* para quebrar em telas pequenas */
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* (opcional) centraliza verticalmente */
-  gap: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
+  .ferramentas{
+    display: flex; 
+    gap:20px; 
     
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     margin-left:-100px;
   }
-.bloco-questoes {
-  width: 200px; /* continua pequeno */
-  background-color: #C6D4E1;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  padding: 10px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin: 0; /* REMOVA qualquer "margin-left" */
-  box-sizing: border-box; 
-    
+  .bloco-questoes {
+    width: 200px;
+    background-color: #C6D4E1;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding:10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .bloco-questoes h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .bloco-questoes img {
+    width: 100px;
+    margin-top: 15px;
+  }  
   .bloco-flashcards {
     width: 200px;
     background-color: #C6D4E1;
@@ -879,33 +881,42 @@ h1 {
 
 
 
-botoesCronometro button:hover {
-  background: #374151;
-}
 
-/* Media Query ÚNICA para max-width: 768px */
+    #botoesCronometro button:hover {
+      background: #374151;
+    }
 @media (max-width: 768px) {
   header {
-    display: flex;             
-    flex-direction: row;       
-    align-items: center;       
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 15px;
   }
 
+@media (max-width: 768px) {
+  header {
+    display: flex;             /* garante flex */
+    flex-direction: row;       /* deixa lado a lado */
+    align-items: center;       /* centraliza verticalmente */
+    justify-content: space-between; /* espaça entre eles */
+    padding: 15px;
+  }
+  
+  /* Opcional: define largura e centraliza conteúdo de cada bloco */
   header > * {
-    flex: 1 1 auto;
-    max-width: 33.33%;
+    flex: 1 1 auto;           /* flexível e igual largura */
+    max-width: 33.33%;        /* 1/3 da largura */
     text-align: center;
   }
-
+  
+  /* Ajusta a imagem do perfil para ficar menor e redonda */
   .perfil-options img, .foto-perfil img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
   }
-
+  
+  /* Remove margin-left de botões ou links para caber certinho */
   .Matérias-slc,
   .Redação-btn,
   .Exercícios-btn {
@@ -953,6 +964,13 @@ botoesCronometro button:hover {
     gap: 10px;
   }
 
+  .Matérias-slc,
+  .Redação-btn,
+  .Exercícios-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
   .image-box img.principal {
     width: 95%;
     height: auto;
@@ -974,8 +992,6 @@ botoesCronometro button:hover {
   .bloco-analise-resultado,
   .redacao {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto; /* centraliza melhor */
   }
 
   .footer-wrapper {
@@ -1002,17 +1018,18 @@ botoesCronometro button:hover {
     width: 120px;
     height: auto;
   }
-
+}
+@media (max-width: 768px) {
   .cartao-enem {
-    flex-direction: column;
-    height: auto;
-    width: 95%;
+    flex-direction: column; /* empilha verticalmente no mobile */
+    height: auto;           /* altura ajustável */
+    width: 95%;             /* quase toda a largura da tela */
     padding: 15px;
   }
 
   .imagem-enem {
     width: 100%;
-    height: 180px;
+    height: 180px; /* ajusta a altura da imagem */
     margin-right: 0;
     margin-bottom: 15px;
   }
@@ -1021,3 +1038,7 @@ botoesCronometro button:hover {
     max-width: 100%;
   }
 }
+
+
+
+
