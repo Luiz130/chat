@@ -423,7 +423,7 @@ h1 {
     
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    margin-left:-100px;
+  
   }
   .bloco-questoes {
     width: 200px;
