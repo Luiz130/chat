@@ -433,17 +433,16 @@ h1 {
     margin-left:-100px;
   }
 .bloco-questoes {
-  width: 200px; /* mantém o tamanho pequeno que você quer */
+  width: 200px; /* continua pequeno */
   background-color: #C6D4E1;
   border-radius: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 10px;
   text-align: center;
   font-family: Arial, sans-serif;
-  margin: 0 auto; /* <-- isso CENTRALIZA o bloco */
+  margin: 0; /* REMOVA qualquer "margin-left" */
   box-sizing: border-box;
 }
-  }  
   .bloco-flashcards {
     width: 200px;
     background-color: #C6D4E1;
