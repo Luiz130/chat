@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cronograma de Estudos</title>
+  <link rel="stylesheet" href="cronograma.css">
+  <style>
+    .cell.filled {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .cell.filled:hover::after {
+      content: '✏️';
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      font-size: 14px;
+    }
+    .modal-content {
+      animation: fadeIn 0.3s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Cronograma Semanal de Estudos</h1>
+  <div class="schedule-container">
+    <div class="header">
+      <div class="time-slot">Horário</div>
+      <div class="day">Seg</div>
+      <div class="day">Ter</div>
+      <div class="day">Qua</div>
+      <div class="day">Qui</div>
+      <div class="day">Sex</div>
+      <div class="day">Sáb</div>
+      <div class="day">Dom</div>
+    </div>
+    <div id="schedule-grid" class="grid"></div>
+  </div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <h2>Editar Bloco de Estudo</h2>
+
+    <label for="subject">Disciplina:</label>
+    <select id="subject">
+      <option value="matematica">Matemática</option>
+      <option value="portugues">Português</option>
+      <option value="historia">História</option>
+      <option value="biologia">Biologia</option>
+      <option value="quimica">Química</option>
+    </select>
+
+    <label for="study-time">Tempo de Estudo (min):</label>
+    <input type="number" id="study-time" min="0" placeholder="Ex: 60">
+
+    <label for="start-time">Início:</label>
+    <input type="time" id="start-time">
+
+    <label for="end-time">Fim:</label>
+    <input type="time" id="end-time">
+
+    <label for="notes">Observações:</label>
+    <textarea id="notes" rows="3" placeholder="Ex: revisar capítulo 4"></textarea>
+
+    <button id="save">Salvar</button>
+
+    <button id="clear-cell" style="margin-top: 10px; background-color: #f87171;">Limpar Bloco</button>
+    <button id="clear-all" style="margin-top: 10px; background-color: #ef4444;">Limpar Tudo</button>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="cronograma.js"></script>
+</body>
+</html>
